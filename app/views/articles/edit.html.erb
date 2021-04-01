@@ -1,0 +1,8 @@
+<h1>Edit Article</h1>
+
+<%= render "form", article: @article %>
+
+<%= link_to "Delete Article", article_path(@article),
+                  method: :delete,
+                  data: { confirm: "Are you sure?" } %>
+<%= link_to "Back to All Articles", root_path %>
